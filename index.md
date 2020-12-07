@@ -4,6 +4,8 @@ title: Jacob Malburne
 description: My Portfolio
 ---
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <p align="center">
 
 <button type="button" class="btn btn-outline-primary">Primary</button>
