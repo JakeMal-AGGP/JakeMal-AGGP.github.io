@@ -4,6 +4,11 @@ title: Jacob Malburne
 description: My Portfolio
 ---
 
+<p align="center">
+
+<a href="../another-page.html" class="btn large">View Projects</a>
+
+</p>
 
 # About Me
 
