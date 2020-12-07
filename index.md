@@ -2,11 +2,9 @@
 layout: default
 title: Jacob Malburne
 description: My Portfolio
-
-[This is a test](./another-page.html).
 ---
 
-
+[This is a test](./another-page.html).
 
 # About Me
 
