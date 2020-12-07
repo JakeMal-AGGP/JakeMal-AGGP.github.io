@@ -6,15 +6,15 @@ description: My Portfolio
 
 
 
--> # About Me <-
+# About Me
 
 Insert Paragraph here talking about who I am
 
--> # What Drives Me <-
+# What Drives Me
 
 Insert Paragraph here explaining my drives and motivations
 
-1
+## I have no idea how to center text in markdown. Every solution I read online doesn't work
 
 
 
