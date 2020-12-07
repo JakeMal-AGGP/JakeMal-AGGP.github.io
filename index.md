@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Jacob Malburne
+description: My Portfolio
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
