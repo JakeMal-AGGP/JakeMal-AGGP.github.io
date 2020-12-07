@@ -6,7 +6,7 @@ description: My Portfolio
 
 <p align="center">
 
-<a href="./another-page.html">Projects</a>
+<a class="btn btn-primary" href="./another-page.html" role="button">Link</a>
 
 </p>
 
