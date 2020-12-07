@@ -6,7 +6,7 @@ description: My Portfolio
 
 <p align="center">
 
-<a class="btn btn-primary" href="./another-page.html" role="button">Link</a>
+<button type="button" class="btn btn-outline-primary">Primary</button>
 
 </p>
 
