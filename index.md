@@ -4,6 +4,16 @@ title: Jacob Malburne
 description: My Portfolio
 ---
 
+# About Me
+
+Insert Paragraph here talking about who I am
+
+# What Drives Me
+
+Insert Paragraph here explaining my drives and motivations
+
+<!---
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
@@ -123,3 +133,5 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+--->
