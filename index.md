@@ -6,7 +6,7 @@ description: My Portfolio
 
 <p align="center">
 
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<a href="./another-page.html" class="btn">Test</a>
 
 </p>
 
