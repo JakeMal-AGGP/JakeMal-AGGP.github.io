@@ -4,7 +4,7 @@ title: Jacob Malburne
 description: My Portfolio
 ---
 
-<div align = "center">
+<p style="text-align: center;">
 
 # About Me
 
@@ -14,7 +14,8 @@ Insert Paragraph here talking about who I am
 
 Insert Paragraph here explaining my drives and motivations
 
-</div>
+</p>
+
 <!---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
