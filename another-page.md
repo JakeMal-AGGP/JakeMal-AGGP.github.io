@@ -10,7 +10,7 @@ description:
 
 </p>
 
-# Categories
+<h1 style="text-align:center">Group Projects</h1>
 
 ## Group Projects
 
