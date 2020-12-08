@@ -16,7 +16,7 @@ description:
 
 <h3>Group Project Placeholder 1</h3>
 ![placeholder](./placeholder.png)
-A brief summary of the project <p align="right"> <a href="./index.html" class="btn">Main Page</a> </p>
+A brief summary of the project <a style="align:right" href="./index.html" class="btn">Main Page</a>
 
 <h2 style="text-align:right">Solo Projects</h2>
 
