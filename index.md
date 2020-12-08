@@ -18,6 +18,13 @@ Insert Paragraph here talking about who I am
 
 Insert Paragraph here explaining my drives and motivations
 
+### List of things that can go into my portfolio:
+
+*   Item Capstone Project
+*   Item Trials of Purgatory Project
+*   Item AR Project
+*   Item VR Project
+*	Item Monogame Tank Project
 
 
 
