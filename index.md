@@ -10,11 +10,11 @@ description: My Portfolio
 
 </p>
 
-# About Me
+<h1 style="text-align:center">About Me</h1>
 
 Insert Paragraph here talking about who I am
 
-# What Drives Me
+<h1 style="text-align:center">What Drives Me</h1>
 
 Insert Paragraph here explaining my drives and motivations
 

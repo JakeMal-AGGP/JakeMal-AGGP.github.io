@@ -14,5 +14,7 @@ description:
 
 ## Group Projects
 
+![Octocat](./placeholder.png)
+
 <h2 style="text-align:right">Solo Projects</h2>
 
