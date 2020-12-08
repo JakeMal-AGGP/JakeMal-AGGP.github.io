@@ -18,7 +18,6 @@ Insert Paragraph here talking about who I am
 
 Insert Paragraph here explaining my drives and motivations
 
-## I have no idea how to center text in markdown. Every solution I read online doesn't work
 
 
 
