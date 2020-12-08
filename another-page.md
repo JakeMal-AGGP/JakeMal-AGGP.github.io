@@ -6,7 +6,7 @@ description:
 
 <p align="center">
 
-<a href="./index.html" class="btn large">Main Page</a>
+<a href="./index.html" class="btn">Main Page</a>
 
 </p>
 
@@ -14,7 +14,9 @@ description:
 
 ## Group Projects
 
-![Octocat](./placeholder.png)
+###Group Project Example 1
+![placeholder](./placeholder.png)
+A brief summary of the project <a href="./index.html" class="btn">Main Page</a>
 
 <h2 style="text-align:right">Solo Projects</h2>
 
