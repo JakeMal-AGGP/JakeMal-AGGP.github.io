@@ -14,9 +14,5 @@ description:
 
 ## Group Projects
 
-<p align="right">
-
-	<h2>Solo Projects</h2>
-
-</p>
+<h2 style="text-align:right">Solo Projects</h2>
 
