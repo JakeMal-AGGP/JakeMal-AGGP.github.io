@@ -1,6 +1,7 @@
 ---
 layout: default
 title: My Projects
+description: 
 ---
 
 <p align="center">
@@ -13,5 +14,9 @@ title: My Projects
 
 ## Group Projects
 
-## Solo Projects
+<p align="right">
+
+	<h2>Solo Projects</h2>
+
+</p>
 
