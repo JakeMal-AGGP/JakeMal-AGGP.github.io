@@ -5,11 +5,13 @@ title: My Projects
 
 <p align="center">
 
-<a href="../another-page.html" class="btn large">Main Page</a>
+<a href="./index.html" class="btn large">Main Page</a>
 
 </p>
 
-## Welcome to another page
+# Categories
 
-_yay_
+## Group Projects
+
+## Solo Projects
 
