@@ -20,9 +20,11 @@ A brief summary of the project
 
 <p align="right">
 
-	<a href="./index.html" class="btn">View Project</a>
+	<a href="./project-page-placeholder.html" class="btn">View Project</a>
 
 </p>
+
+
 
 <h2 style="text-align:right">Solo Projects</h2>
 
@@ -34,7 +36,7 @@ A brief summary of the project
 
 <p align="right">
 
-	<a href="./index.html" class="btn">View Project</a>
+	<a href="./project-page-placeholder.html" class="btn">View Project</a>
 
 </p>
 
