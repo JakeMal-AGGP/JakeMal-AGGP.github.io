@@ -28,7 +28,9 @@ A brief summary of the project
 
 <h3 style="text-align:right">Solo Project Placeholder 1</h3>
 ![placeholder](./placeholder.png)
-<p "text-align:right">A brief summary of the project</p>
+<p style="text-align:right">
+	A brief summary of the project
+</p>
 
 <p align="right">
 
