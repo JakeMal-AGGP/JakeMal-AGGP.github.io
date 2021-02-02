@@ -1,12 +1,103 @@
-/* GLOBAL STYLES
+/* JACOB STUFF
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
+  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  
 }
+
+.center_text {
+	
+	text-align: center;
+		
+}
+
+.center_div {
+	
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	
+}
+
+#header_div{
+	
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: rgb(7,140,150);
+	background: linear-gradient(90deg, rgba(7,140,150,1) 0%, rgba(88,87,109,1) 20%, rgba(139,139,152,1) 80%, rgba(160,142,231,1) 100%);
+	text-align: center;
+	
+}
+
+/* override bootstrap buttons to customize their colors, because I don't like any of them and there's no easier way to do it */
+.btn-outline-info {
+	
+	color: #ECD8FF;
+	border-color: #ECD8FF;
+	padding: 1rem;
+	margin: 1rem;
+	
+}
+
+.btn-outline-info:hover {
+	
+	background-color: #D5A9FF;
+	border-color: #ECD8FF;
+	
+	
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.btn-outline-info:focus {
+	
+	box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+	
+	
+}
+
+.btn-outline-danger {
+	
+	color: #ECD8FF;
+	border-color: #ECD8FF;
+	padding: 1rem;
+	
+}
+
+.btn-outline-danger:hover {
+	
+	background-color: #D5A9FF;
+	border-color: #ECD8FF;
+	
+	
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.btn-outline-danger:focus {
+	
+	box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+	
+	
+}
+
+.btn-outline-danger.dropdown-toggle:not(:disabled):not(.disabled):active:focus,
+.btn-outline-danger.dropdown-toggle:not(:disabled):not(.disabled).active:focus,
+.btn-outline-danger.dropdown-toggle:focus {
+	
+	background-color: #D5A9FF;
+	border-color: #ECD8FF;
+	box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5);
+	
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
