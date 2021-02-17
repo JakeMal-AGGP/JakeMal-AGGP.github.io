@@ -38,6 +38,12 @@ body {
 	
 }
 
+#image_button{
+	
+	position: absolute;
+	
+}
+
 /* override bootstrap buttons to customize their colors, because I don't like any of them and there's no easier way to do it */
 .btn-outline-info {
 	
