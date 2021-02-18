@@ -25,6 +25,15 @@ body {
 	
 }
 
+#projects_div {
+	
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2%;
+	text-align: center;
+	
+}
+
 
 #header_div{
 	
@@ -38,9 +47,11 @@ body {
 	
 }
 
-#image_button{
+#project_div_image{
 	
-	position: absolute;
+	width: 680px;
+	height: 360px;
+	
 	
 }
 
