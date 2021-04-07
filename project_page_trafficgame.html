@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Jacob Malburne | Portfolio</title>
+        <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+ </head>
+  
+
+  
+ <body>
+
+  <header>
+  
+	<div id = "header_div">
+		
+		<br><br>
+		<h1 style="color:#ECD8FF; font-size: 60px;">Jacob Malburne</h1>
+		<br><br>
+		<p>
+			
+			<div class="btn-group">
+			  <a type="button" class="btn btn-outline-danger" href="main_project_page.html">Projects</a>
+			  <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+				<span class="visually-hidden">Toggle Dropdown</span>
+			  </button>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="solo_projects_page.html">Solo Projects</a></li>
+				<li><a class="dropdown-item" href="group_projects_page.html">Group Projects</a></li>
+
+			  </ul>
+			</div>
+			
+			<a class="btn btn-outline-info" href="index.html">Home</a>
+			<a class="btn btn-outline-info" href="about.html">About</a>
+			<a class="btn btn-outline-info" href="contacts.html">Contact</a>
+			
+			
+			
+		</p>
+		<br>
+		
+
+    </div>
+
+  
+  </header>
+  
+<main>
+  
+	
+	<div class="shadow-lg p-3 mb-5 bg-white rounded" id="center_div">
+		
+		<h1 style="text-align:center">AR Traffic Game</h1><br><br>
+		
+		<p style=""><b>Team size:</b> Solo</p>
+		<p style=""><b>Platform:</b> PC</p>
+		<p style=""><b>Engine:</b> Unity/Vuforia</p>
+		<p style=""><b>My role:</b> Programmer/Designer</p>
+		
+		<iframe width="420" height="315"
+			src="https://www.youtube.com/watch?v=M_8Ixul83EY&ab_channel=JMAGGP">
+		</iframe>
+		
+		<br><br>
+		<h2>About the project</h2>
+		<p>This project was created as an exercise in utilizing Augmented Reality. It runs on Vuforia inside of Unity using a Target Image. It was a solo project developed by myself. The objective of the game is simple; 
+		you are overseeing traffic at an intersection, and must control the stoplights to allow traffic through without any accidents. If two cars collide, you lose. Also, if traffic gets too backed-up, you also 
+		lose. You have a score that is determined by how many cars make it safely through the intersection. Originally it was planned for there to be different types of cars that each had their own unique aspects to 
+		them. For example, a bus that took up more space and drove slower, or a motorcycle that took up less space and drove faster. This was in the game shortly during early versions, however was ultimately 
+		removed due to complications within the code, as well as time restraints. A planned feature that never made it off the drawing bored was for pedestrians to walk across the crosswalk, as another obstacle.
+		 This too, however, was cut due to time. </p>
+		<br><br>
+		<img id="project_div_image" src="images/trafficgame_thumbnail.png" class="img-fluid" alt="...">
+		<br><br>
+		<h2>The technical aspects</h2>
+		<p>This project was a mix of familiar and new for me. It used the Unity engine, which I was very familiar with, however the added aspects of Vuforia and AR added a nice "newness" I hadn't yet experienced or 
+		worked with. Vuforia itself was easy to set up and get working, however introduced its own quirks into the workspace that I hadn't yet dealt with. Namely was its perception of the gamespace. Very early into 
+		development I ran into a massive brickwall where I was having difficulty properly spawning in and positioning the cars. This hindered development for a good while while the solution seemed out of grasp. That was 
+		until I realized how simple yet illusive the issue was: gamespace. Since the game world is determined and projected through my phones camera, the "gamespace" was constantly changing based on where my phone 
+		was looking. I had been spawning and positioning the cars based on where my <i>phone</i> was looking, not relative to where they needed to be inside the actual gamespace. This meant that they were spawning 
+		in incredibly weird places, far off from where their original spawn points were supposed to be. The solution itself was painfully easy (compared to how long this brickwall of an issue had been plaguing me 
+		for): all I had to do was change a "position" value to "localPosition". That is, I should have been spawning the cars in <i>locally</i> to the gamespace, not my phones <i>perception</i> of the gamespace. 
+		After this massive hill was overcome, the rest of the development period went rather smoothly. A few hiccups here and there, but nothing that couldn't be solved in diligent time. </p>
+		
+		<br><br>
+		
+		<a style="" class="btn btn-outline-dark btn-lg" href="">View This Projects Github</a>
+	
+	</div>
+	
+	
+		
+	
+	<br><br><br>
+	
+  
+  
+ </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	
+
+ </body>
+  
+  
+  
+</html>

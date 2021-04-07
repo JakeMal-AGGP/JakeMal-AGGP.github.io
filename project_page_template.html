@@ -75,62 +75,46 @@
 <main>
   
 	
-	<div id="projects_div">
-	<h1 style="text-align:center">Project Title</h1>
-	
-		<div class="shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 2%">
+	<div class="shadow-lg p-3 mb-5 bg-white rounded" id="center_div">
 		
-			<div class="container">
-			
-				<div class="row">
-					
-					<div class="col-auto">
-						<img id="project_div_image" src="placeholder.png" class="img-fluid" alt="...">
-					</div>
-					<div class="col-4">
-						<p style="">Insert short paragraph that provides an abridged description of the project</p>
-					</div>
-					<div class="col">
-						<a style="" class="btn btn-outline-dark btn-lg" href="#">View Project</a>
-					</div>
-					
-
-				</div>
-			
-			</div>
-			
-			
-			
-			
-			
-		</div>
+		<h1 style="text-align:center">Classic Tank Game</h1><br><br>
 		
-		<div class="shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 2%">
+		<p style=""><b>Team size:</b> Solo</p>
+		<p style=""><b>Platform:</b> PC</p>
+		<p style=""><b>Engine:</b> Monogame</p>
+		<p style=""><b>My role:</b> Programmer/Designer</p>
 		
-			<div class="container">
+		<video width="1080" height="720" controls>
+			<source src="videos/tankgame_video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
 			
-				<div class="row">
-					
-					<div class="col-auto">
-						<img id="project_div_image" src="placeholder.png" class="img-fluid" alt="...">
-					</div>
-					<div class="col-4">
-						<p style="">Insert short paragraph that provides an abridged description of the project</p>
-					</div>
-					<div class="col">
-						<a style="" class="btn btn-outline-dark btn-lg" href="#">View Project</a>
-					</div>
-					
-
-				</div>
-			
-			</div>
-			
-			
-			
-			
-			
-		</div>
+		</video>
+		
+		<br><br>
+		<h2>About the project</h2>
+		<p>This project doesn't really have a formal name, I simply refer to it as my "Tank Game". It originated as my final project for my Math and Physics Programming course in college, and I continued developing it 
+		shortly as a personal project. Being a solo developer for this project, I created everything (shy of the sound effects and music, which are royalty free and credited in the files). The game runs on Monogame, 
+		which is an XNA based game engine. The purpose of the game was to create and show of custom, manually coded physics and collisions, which this game does with its projectiles. Two tanks are placed at opposite ends 
+		of the arena and must take turns lining up shots at each other. The terrain is randomly generated each game, and each tank is allowed to move a certain amount across the terrain per turn if wanted. There are three different classes of tanks, each with their own unique 
+		stats and abilities. For example, the "speedy" tank can move a much greater distance per turn that the other tanks, but is fitted with much weaker armor, meaning a lower health total. A winner is decided once one tanks 
+		life total reaches zero.</p>
+		<br><br>
+		<img id="project_div_image" src="images/tankgame_thumbnail.png" class="img-fluid" alt="...">
+		<br><br>
+		<h2>The technical aspects</h2>
+		<p>As mentioned, since this was a solo project, I was in charge of creating pretty much everything. Monogame doesn't have a whole lot in terms of built-in functionality, unlike many other engines. 
+		The biggest challenge in creating this game we're the collisions, namely checking for when the projectile has collided with the ground. Having the projectile be affected by gravity was also a short headache, 
+		but ended up being relatively easy compared to the projectile-to-ground collisions. The projectiles were simple circle objects, and the ground was represented simply by a line. The issue was, however, 
+		the terrain is randomly generated, meaning the position of the ground constantly varies. While I had experience with collision checking with circles and rectangles, I had no experience with collision checking 
+		with lines. I was quickly able to determine <i>what</i> I needed to do; check for an intersection between the circle projectile and line ground, however I wasn't immediately sure how to go about doing it. 
+		Since the terrain is split into different chunks, each with their own elevations and steepness, the point of intersection would never be the same at any two given points (other than a few exceptions). I eventually 
+		solved this issue by splitting the terrain up into sections; that is, each chunk of the terrain was recognized by the projectile as it's own unique section. As the projectile flies across the terrain, it keeps track 
+		of which section it's in, and uses the elevation and steepness of the line-ground inside the given section to determine where the points of intersection are. Once it knows where the points of intersection are, it 
+		can accurately determine when the projectile collides with the ground. Overall, I really enjoyed creating this small project. It was a great exercise in having to create a lot from a little.</p>
+		
+		<br><br>
+		
+		<a style="" class="btn btn-outline-dark btn-lg" href="">View This Projects Github</a>
 	
 	</div>
 	
