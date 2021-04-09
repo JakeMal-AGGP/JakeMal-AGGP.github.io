@@ -77,35 +77,37 @@
 	
 	<div class="shadow-lg p-3 mb-5 bg-white rounded" id="center_div">
 		
-		<h1 style="text-align:center">AR Traffic Game</h1><br><br>
+		<h1 style="text-align:center">VR Minigolf Game</h1><br><br>
 		
 		<p style=""><b>Team size:</b> Solo</p>
 		<p style=""><b>Platform:</b> PC</p>
-		<p style=""><b>Engine:</b> Unity/Vuforia</p>
+		<p style=""><b>Engine:</b> Unity</p>
 		<p style=""><b>My role:</b> Programmer/Designer</p>
 		
-		<iframe width="854" height="480" src="https://www.youtube.com/embed/M_8Ixul83EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="420" height="315"
+			src="https://www.youtube.com/watch?v=M_8Ixul83EY&ab_channel=JMAGGP">
+		</iframe>
 		
 		<br><br>
 		<h2>About the project</h2>
-		<p>This project was created as an exercise in utilizing Augmented Reality. It runs on Vuforia inside of Unity using a Target Image. It was a solo project developed by myself. The objective of the game is simple; 
-		you are overseeing traffic at an intersection, and must control the stoplights to allow traffic through without any accidents. If two cars collide, you lose. Also, if traffic gets too backed-up, you also 
-		lose. You have a score that is determined by how many cars make it safely through the intersection. Originally it was planned for there to be different types of cars that each had their own unique aspects to 
-		them. For example, a bus that took up more space and drove slower, or a motorcycle that took up less space and drove faster. This was in the game shortly during early versions, however was ultimately 
-		removed due to complications within the code, as well as time restraints. A planned feature that never made it off the drawing bored was for pedestrians to walk across the crosswalk, as another obstacle.
-		 This too, however, was cut due to time. </p>
+		<p>This project was my first experience working with Virtual Reality. The premise of the game is simple: you play minigolf in Virtual Reality. There are a handful of short holes to complete, fitted with various obstacles 
+		such as walls, sand traps, and water hazards. Your strokes are kept track of and displayed at the end of the hole.</p>
 		<br><br>
-		<img id="project_div_image" src="images/trafficgame_thumbnail.png" class="img-fluid" alt="...">
+		<img id="project_div_image" src="images/minigolf_thumbnail.png" class="img-fluid" alt="...">
 		<br><br>
 		<h2>The technical aspects</h2>
-		<p>This project was a mix of familiar and new for me. It used the Unity engine, which I was very familiar with, however the added aspects of Vuforia and AR added a nice "newness" I hadn't yet experienced or 
-		worked with. Vuforia itself was easy to set up and get working, however introduced its own quirks into the workspace that I hadn't yet dealt with. Namely was its perception of the gamespace. Very early into 
-		development I ran into a massive brickwall where I was having difficulty properly spawning in and positioning the cars. This hindered development for a good while while the solution seemed out of grasp. That was 
-		until I realized how simple yet illusive the issue was: gamespace. Since the game world is determined and projected through my phones camera, the "gamespace" was constantly changing based on where my phone 
-		was looking. I had been spawning and positioning the cars based on where my <i>phone</i> was looking, not relative to where they needed to be inside the actual gamespace. This meant that they were spawning 
-		in incredibly weird places, far off from where their original spawn points were supposed to be. The solution itself was painfully easy (compared to how long this brickwall of an issue had been plaguing me 
-		for): all I had to do was change a "position" value to "localPosition". That is, I should have been spawning the cars in <i>locally</i> to the gamespace, not my phones <i>perception</i> of the gamespace. 
-		After this massive hill was overcome, the rest of the development period went rather smoothly. A few hiccups here and there, but nothing that couldn't be solved in diligent time. </p>
+		<p>Much like the AR project, this was a mixture of familiar and new to me. Unlike AR, however, working with VR was much easier and more familiar to me since it all ran directly inside Unity, rather than having to 
+		be built to my phone and running there. This made testing in VR much much easier and faster than AR. The biggest challenge of creating minigolf was the interactions between the club and the ball. 
+		Originally, I had planned for the interaction to be purely collision based, handled entirely by Unity's physics engine. This, however, proved to be nearly impossible. Unity struggled to accurately process 
+		any sort of collision between the club and the ball when the club was being swung at even a moderately quick pace. Even a gentle putting motion sometimes went completely hay-wire under Unity's control. The main 
+		issue was clipping; if the club was moving too quickly (which wasn't hard to achieve since anything past a slight tap was too quick for the physics engine) the club would completely clip inside of the ball and often 
+		cause the ball to launch off in the wrong direction or sometimes completely off the map with great velocity. Even with the highest-precision collision tracking settings turned on, it still proved to be too much
+		for Unity's physics engine. So I had to improvise. I ended having to code my own interactions between the club and the ball. This was done by detecting the exact moment the club came into contact with the ball and 
+		determining the clubs velocity at the point of contact. It then applied that velocity to the ball, sending the ball in the correct direction with an appropriate speed. After some fine tuning, this system actually 
+		felt and handled very well. I was very proud with the solution I had come up with. Past this initial problem, the rest of development went smoothly. The ball-in-the-hole interactions were straight forward, and the 
+		scoring was simple. Most of the development time past the initial putting physics was spent designing and creating the handful of holes, as well as they various obstacles. Past normal wall obstacles, sand traps 
+		slow your ball down, and water hazards rests your ball its last position. The slowing down of the ball inside the sand traps was handled using a special physics material that added friction to the ball, which 
+		meant no additional code was required to achieve the slowing effect.</p>
 		
 		<br><br>
 		
