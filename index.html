@@ -122,12 +122,38 @@
 		</div>
 		<br>
 		<div style="text-align:center">
+			<div class="flavorText">
+				<h2>Rocket Jump Racing</h2>
+				<p style="">An explosive multi-player arena-style shooter where each player is armed with a rocket launcher and various power-ups and must rocket jump to the finish line first</p>
+				<p style=""><b>Team size:</b> 5 people</p>
+				<p style=""><b>Platform:</b> PC</p>
+				<p style=""><b>Engine:</b> Unity</p>
+				<p style=""><b>My role:</b> Programmer</p>
+			</div>
+			<div class="flavorText">
+				<h2>Tank Game</h2>
+				<p style="">A classic and simple tank game where two tanks must calculate gravity and angles to hit each other with shots in a retro-themed arena</p>
+				<p style=""><b>Team size:</b> Solo</p>
+				<p style=""><b>Platform:</b> PC</p>
+				<p style=""><b>Engine:</b> Monogame</p>
+				<p style=""><b>My role:</b> Programmer/Designer</p>
+			</div>
+			<div class="flavorText">
+				<h2>VR Minigolf</h2>
+				<p style="">A virtual reality game based on minigolfing.</p>
+				<p style=""><b>Team size:</b> Solo</p>
+				<p style=""><b>Platform:</b> PC</p>
+				<p style=""><b>Engine:</b> Unity</p>
+				<p style=""><b>My role:</b> Programmer/Designer</p>
+			</div>
+		</div>
+		<div style="text-align:center">
 			 <span class="dot" onclick="currentSlide(1)"></span> 
 			 <span class="dot" onclick="currentSlide(2)"></span> 
 			 <span class="dot" onclick="currentSlide(3)"></span> 
 		</div>
-	
-		
+	</div>
+	<div class="shadow-lg p-3 mb-5 bg-white rounded" id="center_div">
 		
 		<p>I've been interested in the technical side of video games since I was a child. I would spend hours upon hours just walking around my favorite games, not necessarily <i>playing</i> them, but more just 
 		exploring them and thinking about how the game was made behind the scene, fascinated by the concept of being able to create a world where reality is under my control.</p> 
@@ -175,6 +201,7 @@
 		function showSlides(n) {
 		  var i;
 		  var slides = document.getElementsByClassName("mySlides");
+		  var text = document.getElementsByClassName("flavorText");
 		  var dots = document.getElementsByClassName("dot");
 		  if (n > slides.length) {slideIndex = 1}    
 		  if (n < 1) {slideIndex = slides.length}
@@ -184,8 +211,12 @@
 		  for (i = 0; i < dots.length; i++) {
 			  dots[i].className = dots[i].className.replace(" active", "");
 		  }
+		  for (i = 0; i < text.length; i++) {
+			  text[i].style.display = "none";
+		  }
 		  slides[slideIndex-1].style.display = "block";  
 		  dots[slideIndex-1].className += " active";
+		  text[slideIndex-1].style.display = "block";
 		}
 	</script>
 
